@@ -6,7 +6,7 @@ function Search(props){
     return(
         <form onSubmit={(e)=>e.preventDefault()}>
         <div className="form-group">
-          <label htmlFor="search">Search:</label>
+          <label htmlFor="search">Search:<i class="fas fa-search"></i></label>
           <input
             onChange={props.handleInputChange}
             value={props.search}

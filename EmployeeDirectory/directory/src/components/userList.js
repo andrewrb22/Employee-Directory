@@ -1,8 +1,10 @@
 import React from "react";
 import Card from 'react-bootstrap/Card'
+import "../styles/UserList.css"
+
 function UserList(props) {
     return (
-            <Card style={{ width: '18rem' }}>
+            <Card className="card" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.picture} />
                 <Card.Body>
                     <Card.Title><strong>Name:</strong> {props.name}</Card.Title>
