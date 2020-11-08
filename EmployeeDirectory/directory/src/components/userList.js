@@ -9,7 +9,7 @@ function UserList(props) {
                     <Card.Text>
                         <p><strong>Email:</strong>{props.email}</p>
                         <p><strong>Phone Number:</strong> {props.phone}</p>
-                         <p><strong>Age:</strong>{props.dob}</p>
+                         <p><strong>Age:</strong>{props.age}</p>
                     </Card.Text>
                 </Card.Body>
             </Card>

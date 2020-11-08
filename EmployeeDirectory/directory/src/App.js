@@ -60,7 +60,7 @@ class App extends Component {
               picture={element.picture.thumbnail}
               email={element.email}
               phone={element.phone}
-              age={element.age}
+              age={element.dob.age}
             />
           ))}
         </Wrapper>
