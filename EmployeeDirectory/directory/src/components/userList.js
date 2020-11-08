@@ -1,15 +1,19 @@
 import React from "react";
-
+import Card from 'react-bootstrap/Card'
 function UserList(props) {
     return (
-        <ul className="list-group">
-            <li className="list-group-item">
-                <h3>{props.name}</h3>
-                <img src={props.picture}/>
-                <p>{props.email}</p>
-                <p>{props.phone}</p>
-            </li>
-        </ul>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={props.picture} />
+                <Card.Body>
+                    <Card.Title><strong>Name:</strong> {props.name}</Card.Title>
+                    <Card.Text>
+                        <p><strong>Email:</strong>{props.email}</p>
+                        <p><strong>Phone Number:</strong> {props.phone}</p>
+                         <p><strong>Age:</strong>{props.dob}</p>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        
     );
 }
 

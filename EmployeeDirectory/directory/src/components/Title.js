@@ -1,10 +1,13 @@
 import React from "react";
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
 function Title() {
     return (
-        <header className="title">
-            <h1>Employee Directory</h1>
-        </header>
+        <Jumbotron fluid>
+     
+          <h1 style={{textAlign: "center",}}>Employee Directory</h1>
+         
+      </Jumbotron>
       );
 
 }

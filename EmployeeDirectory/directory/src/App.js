@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import UserList from "./components/userList"
 import Title from "./components/Title"
 import API from "./utils/API"
-
+import Wrapper from "./components/Wrapper";
 
 class App extends Component {
 
@@ -21,16 +21,19 @@ class App extends Component {
 
     return (
       <div>
-        <Title />
+      <Title />
+      <Wrapper>
         {this.state.result.map((element,index) => (
           <UserList
-            key={index}
-            name={element.name.first}
-            picture={element.picture.thumbnail}
-            email={element.email}
-            phone={element.phone}
+          key={index}
+          name={element.name.first}
+          picture={element.picture.thumbnail}
+          email={element.email}
+          phone={element.phone}
+          age={element.age}
           />
         ))}
+      </Wrapper>
       </div>
     );
   }
