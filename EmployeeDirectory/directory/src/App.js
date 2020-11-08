@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import UserList from "./components/userList"
 import Title from "./components/Title"
 import API from "./utils/API"
+
+
 class App extends Component {
 
   state = {
@@ -25,6 +27,8 @@ class App extends Component {
             key={index}
             name={element.name.first}
             picture={element.picture.thumbnail}
+            email={element.email}
+            phone={element.phone}
           />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Title(props) {
+function Title() {
     return (
         <header className="title">
             <h1>Employee Directory</h1>
